@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addCss"><name>css/faqs.css</name></action>
+        </reference>
+        <reference name="left">
+            <block type="faqs/left" name="faqs_left" template="faqs/list.phtml"/>
+        </reference>
+    </default>
+    <faqs_index_index>
+        <reference name="content">
+            <block type="faqs/page" name="faqs_left" template="faqs/list.phtml"/>
+        </reference>
+    </faqs_index_index>
+</layout>   
+	

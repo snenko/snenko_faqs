@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<widgets>
+    <faqs_faqs type="faqs/faqs" translate="name description" module="faqs">
+        <name>faqs</name>
+        <description type="desc">You can show Faqs</description>
+        <parameters>
+            <rows>
+                <label>Count rows</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <value>5</value>
+            </rows>
+        </parameters>
+    </faqs_faqs>
+</widgets>

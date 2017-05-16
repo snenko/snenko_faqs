@@ -1,0 +1,23 @@
+<?php
+/** @var Snenko_Faqs_Block_Left $this */
+$collection = $this->getCollection();
+?>
+<?php IF (count($collection) > 0): ?>
+
+    <div id="faqs">
+        <p class="title-faqs">Faqs</p>
+        <ul class="faqs">
+            <?php FOREACH ($collection as $item): ?>
+                <li>
+                    <p class="question-faqs">
+                        <?php echo $item->getQuestion() ?>
+                    </p>
+                    <p class="answer-faqs">
+                        <?php echo $item->getAnswer() ?>
+                    </p>
+                </li>
+            <?php ENDFOREACH; ?>
+        </ul>
+    </div>
+
+<?php ENDIF; ?>
